@@ -1,0 +1,923 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Marvel.com is the official site of Marvel Entertainment! Browse official Marvel movies, characters, comics, TV shows, videos, &amp; more."
+    />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <title>
+      Marvel.com | The Official Site for Marvel Movies, Characters, Comics, TV
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1bd4b8c57e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="font-Roboto">
+    <!-- ########### HEADER ########### -->
+    <header class="bg-[#202020]">
+      <nav
+        class="flex items-center justify-between md:border-b border-[#393939] px-10 z-[100]"
+      >
+        <div class="first-men md:border-l border-r border-[#393939]">
+          <!-- ########### HAMBURGER ########### -->
+
+          <div class="hamburger md:hidden">
+            <div
+              class="open-menu cursor-pointer md:hidden relative z-20"
+              id="open"
+            >
+              <i class="fa-solid fa-bars text-white text-[20px] md:hidden"></i>
+            </div>
+            <div
+              class="close-menu cursor-pointer md:hidden hidden relative z-20"
+              id="close"
+            >
+              <i class="fa-solid fa-xmark text-white text-[23px] md:hidden"></i>
+            </div>
+          </div>
+
+          <script src="script.js"></script>
+
+          <!-- ########### SIGN-UP ########### -->
+
+          <div class="sign-log hidden md:block p-2">
+            <a href="/" class="text-white text-[12px]">SIGN IN | JOIN</a>
+          </div>
+        </div>
+        <!-- ########### LOGO ########### -->
+
+        <div class="logo ml-6 md:ml-[10.5rem]">
+          <span
+            class="icon--svg icon--svg mvl-animated-logo cursor-pointer"
+            aria-hidden="true"
+            ><svg width="130" height="52" xmlns="http://www.w3.org/2000/svg">
+              <rect fill="#EC1D24" width="100%" height="100%"></rect>
+              <path
+                fill="#FEFEFE"
+                d="M126.222 40.059v7.906H111.58V4h7.885v36.059h6.757zm-62.564-14.5c-.61.294-1.248.44-1.87.442v-14.14h.04c.622-.005 5.264.184 5.264 6.993 0 3.559-1.58 5.804-3.434 6.705zM40.55 34.24l2.183-18.799 2.265 18.799H40.55zm69.655-22.215V4.007H87.879l-3.675 26.779-3.63-26.78h-8.052l.901 7.15c-.928-1.832-4.224-7.15-11.48-7.15-.047-.002-8.06 0-8.06 0l-.031 39.032-5.868-39.031-10.545-.005-6.072 40.44.002-40.435H21.278L17.64 26.724 14.096 4.006H4v43.966h7.95V26.78l3.618 21.192h4.226l3.565-21.192v21.192h15.327l.928-6.762h6.17l.927 6.762 15.047.008h.01v-.008h.02V33.702l1.845-.27 3.817 14.55h7.784l-.002-.01h.022l-5.011-17.048c2.538-1.88 5.406-6.644 4.643-11.203v-.002C74.894 19.777 79.615 48 79.615 48l9.256-.027 6.327-39.85v39.85h15.007v-7.908h-7.124v-10.08h7.124v-8.03h-7.124v-9.931h7.124z"
+              ></path>
+              <path fill="#EC1D24" d="M0 0h30v52H0z"></path>
+              <path
+                fill="#FEFEFE"
+                d="M31.5 48V4H21.291l-3.64 22.735L14.102 4H4v44h8V26.792L15.577 48h4.229l3.568-21.208V48z"
+              ></path></svg
+          ></span>
+        </div>
+
+        <!-- ########### Search and icon ############ -->
+        <div
+          class="main-sec md:flex items-center text-center font-semibold px-2 cursor-pointer"
+        >
+          <div class="sec- hidden md:flex">
+            <div class="img-fir md:border-l border-[#393939] p-2">
+              <img src="icon.png" alt="iconn" class="w-6" />
+            </div>
+            <div class="text text-[12px] text-white p-2 w-40">
+              <span>MARVEL UNLIMITED SUBSCRIBE</span>
+            </div>
+          </div>
+
+          <div
+            class="search cursor-pointer md:border-l md:border-r border-[#393939] p-2"
+          >
+            <a href="/"
+              ><span
+                ><i class="fa-solid fa-magnifying-glass text-white"></i></span
+            ></a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ########### Items for Nav Desktop ########### -->
+      <div class="md:translate-x-0">
+        <div
+          class="items-nav w-[100vw] h-[100vh] md:h-auto md:w-auto text-white text-lg md:text-[12px] md:font-extrabold font-Robotos p-2 absolute md:bg-[#202020] md:static z-10 translate-y-[-56px] md:translate-y-0 translate-x-[-149%] md:translate-x-0 bg-black"
+          id="items"
+        >
+          <ul
+            class="ul-items md:flex justify-center md:space-x-11 space-y-12 ml-8 md:space-y-0 mt-20 md:my-0"
+          >
+            <li>
+              <a href="/" class="md:hover:underline underline-offset-[11px]"
+                >VIDEOS</a
+              >
+            </li>
+            <li>
+              <a href="/" class="md:hover:underline underline-offset-[11px]"
+                >CHARACTERS</a
+              >
+            </li>
+            <li>
+              <a href="/" class="md:hover:underline underline-offset-[11px]"
+                >COMICS</a
+              >
+            </li>
+            <li>
+              <a href="/" class="md:hover:underline underline-offset-[11px]"
+                >MOVIES</a
+              >
+            </li>
+            <li>
+              <a href="/" class="md:hover:underline underline-offset-[11px]"
+                >TV SHOWS</a
+              >
+            </li>
+            <li>
+              <a href="/" class="md:hover:underline underline-offset-[11px]"
+                >GAMES</a
+              >
+            </li>
+            <li>
+              <a href="/" class="md:hover:underline underline-offset-[11px]"
+                >NEWS</a
+              >
+            </li>
+            <li>
+              <a href="/" class="md:hover:underline underline-offset-[11px]"
+                >MORE</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- ########### Promotion ########### -->
+      <div
+        class="promotion bg-black text-white text-[12px] text-center p-1 font-Roboto relative md:static flex items-center justify-center"
+      >
+        <span class="">
+          <a href="http://"> STREAM SHE-HULK: ATTORNEY-AT-LAE ON</a>
+        </span>
+        <span
+          ><img
+            src="Web capture_23-8-2022_114619_.jpeg"
+            alt="disney-logo"
+            class="w-14 ml-3 translate-y-[-4px]"
+        /></span>
+      </div>
+    </header>
+
+    <!-- ############ MAIN SECTION ############ -->
+    <main>
+      <!-- ############ FIRST SECTION ############ -->
+      <section>
+        <div
+          class="firstsec-img-text bg-[#151515] text-[#fff] cursor-pointer md:h-[60vh]"
+        >
+          <div class="img md:relative">
+            <img
+              src="first-smm.jpg"
+              alt="thor"
+              class="w-full h-[40vh] bg-cover md:hidden"
+            />
+            <img
+              src="first-lg.jpg"
+              alt="thor"
+              class="w-full md:h-[60vh] bg-cover hidden md:block"
+            />
+          </div>
+          <div
+            class="text-fir px-7 py-9 text-justify md:absolute top-[26%] left-6 md:w-1/2"
+          >
+            <div class="thor-logo">
+              <img src="thor-logo.png" alt="logo-thor" class="" />
+            </div>
+            <div class="info my-2">
+              <h1
+                class="text-[26px] font-medium font-Robotos tracking-[0.5px] md:tracking-normal"
+              >
+                STREAMING ON DISNEY+ DAY
+              </h1>
+              <span class="text-[14px] my-1 font-[400]"
+                >Thor: Love and Thunder is coming to Disney+ on September 8th,
+                just in time for Disney+ Day!</span
+              >
+              <button
+                class="bg-[#e62429] p-2 px-3 block mt-4 hover:bg-[#6a1316] cursor-pointer font-[800] text-[14px] transition-colors duration-[0.8s] rounded-md"
+              >
+                LEARN MORE
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- ############ Second ############ -->
+        <div
+          class="secondsec-img-text bg-[#151515] text-[#fff] cursor-pointer md:h-[60vh]"
+        >
+          <div class="img md:relative">
+            <img
+              src="she-hulk.jpg"
+              alt="thor"
+              class="w-full bg-cover md:hidden"
+            />
+            <img
+              src="she-hulk-lg.jpg"
+              alt="thor"
+              class="w-full md:h-[60vh] bg-cover hidden md:block"
+            />
+          </div>
+          <div
+            class="text-fir px-7 py-9 text-justify md:absolute top-[83%] right-6 md:w-1/2"
+          >
+            <div class="thor-logo">
+              <img src="she-hulk-logo.png" alt="logo-She hulk" class="" />
+            </div>
+            <div class="info my-2">
+              <h1
+                class="text-[26px] font-medium font-Robotos tracking-[0.5px] md:tracking-normal"
+              >
+                NOW STREAMING
+              </h1>
+              <span class="text-[14px] my-1 font-[400]"
+                >This calls for a normal amount of rage. She-Hulk: Attorney at
+                Law, a new series now streaming, only on Disney+.</span
+              >
+              <div class="buttons flex space-x-5">
+                <button
+                  class="bg-[#e62429] p-2 px-3 block mt-4 hover:bg-[#6a1316] cursor-pointer font-[800] text-[14px] transition-colors duration-[0.8s] rounded-md"
+                >
+                  LEARN MORE
+                </button>
+                <button
+                  class="bg-[#e62429] p-2 px-3 block mt-4 hover:bg-[#6a1316] cursor-pointer font-[800] text-[14px] transition-colors duration-[0.8s] rounded-md"
+                >
+                  WATCH MORE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ############ second section ############ -->
+      <section>
+        <div
+          class="second-sec-img-text md:flex relative w-full h-auto md:h-[80vh] cursor-pointer"
+        >
+          <div class="img-second order-2 z-50">
+            <img
+              src="SHE-HULK-BG.jpg"
+              alt="SHE HULK"
+              class="bg-cover w-full h-full"
+            />
+          </div>
+          <div
+            class="info-sec pt-12 pb-11 px-4 bg-[#151515] text-[#fff] order-1 relative flex justify-center flex-col z-40 md:w-[75%] items-center"
+          >
+            <div class="thor-logo">
+              <img src="she-hulk-logo.png" alt="logo-She hulk" class="" />
+            </div>
+            <h1
+              class="text-[26px] font-medium font-Robotos tracking-[0.5px] md:tracking-normal"
+            >
+              NOW STREAMING
+            </h1>
+
+            <div class="buttons flex space-x-4">
+              <button
+                class="bg-[#e62429] p-2 px-3 block mt-4 hover:bg-[#6a1316] cursor-pointer font-[800] text-[14px] transition-colors duration-[0.8s] rounded-md"
+              >
+                LEARN MORE
+              </button>
+              <button
+                class="bg-[#e62429] p-2 px-3 block mt-4 hover:bg-[#6a1316] cursor-pointer font-[800] text-[14px] transition-colors duration-[0.8s] rounded-md"
+              >
+                WATCH MORE
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ########### Third Section ########### -->
+      <section class="">
+        <!-- ############ Slider ############ -->
+        <div
+          class="slider-flex-wrapper md:relative md:translate-y-[-66px] md:z-40"
+        >
+          <!-- ############ Cards ############ -->
+          <div class="cards-block md:grid sm:grid-cols-2 md:grid-cols-3">
+            <div class="first-block px-6 pt-7 pb-5">
+              <div class="img cursor-pointer">
+                <img src="she-hulk_posters.png" alt="She hulk" />
+              </div>
+              <div class="text">
+                <span
+                  class="block text-[#767676] text-[14px] font-[600] font-Robotos mt-2"
+                  >TV SHOWS</span
+                >
+                <a
+                  href="/"
+                  class="text-[14px] font-black inline-block hover:text-red-600 transition-colors duration-[0.2s]"
+                  >'She Hulk':Episode 1- Jennifer Walter Vs. Bruce Banner</a
+                >
+              </div>
+            </div>
+            <!-- ########### Second Block ########### -->
+            <div class="first-block px-6 pt-7 pb-5">
+              <div class="img cursor-pointer">
+                <img src="she-hulk-third.png" alt="She hulk" />
+              </div>
+              <div class="text">
+                <span
+                  class="block text-[#767676] text-[14px] font-[600] font-Robotos mt-2"
+                  >TV SHOWS</span
+                >
+                <a
+                  href="/"
+                  class="text-[14px] font-black inline-block hover:text-red-600 transition-colors duration-[0.2s]"
+                  >'She Hulk':Discover What It Means To Be a Hulk in New
+                  Featurette
+                </a>
+              </div>
+            </div>
+            <!-- ########### Third Block ########### -->
+            <div class="first-block px-6 pt-7 pb-5">
+              <div class="img cursor-pointer">
+                <img src="she-hulk_posters.png" alt="posters" />
+              </div>
+              <div class="text">
+                <span
+                  class="block text-[#767676] text-[14px] font-[600] font-Robotos mt-2"
+                  >TV SHOWS</span
+                >
+                <a
+                  href="/"
+                  class="text-[14px] font-black inline-block hover:text-red-600 transition-colors duration-[0.2s]"
+                  >Exhibit A- New 'She Hulk':'Attorney at Law' Posters</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ########### Fourth Section ########### -->
+      <section>
+        <div
+          class="fourth-sec-main-wrapper md:flex relative w-full md:h-[80vh] h-auto cursor-pointer"
+        >
+          <div class="img-fourth order-3">
+            <img
+              src="fourth-sec-main-bg.jpg"
+              alt="Background"
+              class="w-full md:h-full bg-cover h-[50vh]"
+            />
+          </div>
+          <div
+            class="fourth-info pt-4 pb-11 pl-16 pr-8 bg-[#151515] text-[#fff] relative flex justify-center flex-col z-40 md:w-[75%] order-2"
+          >
+            <div class="img-bg my-2">
+              <img src="marvale-logo-fourth-sec.png" alt="Marvel logo" />
+            </div>
+            <div class="text">
+              <span class="tracking-[4px] text-[14px] font-medium"
+                >AVAILABLE NOW</span
+              >
+              <h1
+                class="text-[26px] font-medium font-Robotos tracking-[0.5px] md:tracking-normal md:text-[40px]"
+              >
+                NEW ON MARVVEL UNLIMITED
+              </h1>
+              <p class="font-medium font-Robotos my-2">
+                Read these plus 30,000+ digital comics for $9.99 a month!
+              </p>
+              <button
+                class="bg-[#e62429] p-2 px-3 block mt-4 hover:bg-[#6a1316] cursor-pointer font-[800] text-[14px] transition-colors duration-[0.8s] rounded-md"
+              >
+                GET MARVEL UNLIMITED
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- ########### BLOCKS ########### -->
+        <div
+          class="cards-blocks-main m-6 grid md:flex justify-center grid-cols-3 md:-translate-y-10 md:relative md:z-50 md:bg-white md:px-2 md:pt-6 w-[80vw] mx-auto md:m-auto"
+        >
+          <!-- ########### First Block ########### -->
+          <div
+            class="card-block px-2 w-[172px] max-h-full max-w-full cursor-pointer hover:text-red-600 hover:translate-y-[-0.6rem] transition-all duration-[0.4s] ease-in-out"
+          >
+            <div class="first-block-sec-four">
+              <div class="img">
+                <img src="Eternnal.jpg" alt="eternals" />
+              </div>
+              <div class="content-sec-four">
+                <p class="text-[14px] font-black font-Roboto p-1">
+                  Eternals (2021) #12
+                </p>
+                <span
+                  class="block text-[#767676] text-[12px] font-[600] font-Robotos px-1"
+                  >2022</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- ########### Second Block ########### -->
+          <div
+            class="card-block px-2 w-[172px] max-h-full max-w-full cursor-pointer hover:text-red-600 hover:translate-y-[-0.6rem] transition-all duration-[0.4s] ease-in-out"
+          >
+            <div class="first-block-sec-four">
+              <div class="img">
+                <img src="voices.jpg" alt="eternals" />
+              </div>
+              <div class="content-sec-four">
+                <p class="text-[14px] font-black font-Roboto p-1">
+                  Marvle's Voices: Identity (2022) #1
+                </p>
+                <span
+                  class="block text-[#767676] text-[12px] font-[600] font-Robotos px-1"
+                  >2022</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- ########### Third Block ########### -->
+          <div
+            class="card-block px-2 w-[172px] max-h-full max-w-full cursor-pointer hover:text-red-600 hover:translate-y-[-0.6rem] transition-all duration-[0.4s] ease-in-out"
+          >
+            <div class="first-block-sec-four">
+              <div class="img">
+                <img src="patch.jpg" alt="eternals" />
+              </div>
+              <div class="content-sec-four">
+                <p class="text-[14px] font-black font-Roboto p-1">
+                  Wolverine: Patch (2022) #2
+                </p>
+                <span
+                  class="block text-[#767676] text-[12px] font-[600] font-Robotos px-1"
+                  >2022</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- ########### Fourth Block ########### -->
+          <div
+            class="card-block px-2 w-[172px] max-h-full max-w-full cursor-pointer hover:text-red-600 hover:translate-y-[-0.6rem] transition-all duration-[0.4s] ease-in-out hidden md:block"
+          >
+            <div class="first-block-sec-four">
+              <div class="img">
+                <img src="fantastic-four.jpg" alt="eternals" />
+              </div>
+              <div class="content-sec-four">
+                <p class="text-[14px] font-black font-Roboto p-1">
+                  Fantastic Four (2018) #43
+                </p>
+                <span
+                  class="block text-[#767676] text-[12px] font-[600] font-Robotos px-1"
+                  >2022</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- ########### First Block ########### -->
+          <div
+            class="card-block px-2 w-[172px] max-h-full max-w-full cursor-pointer hover:text-red-600 hover:translate-y-[-0.6rem] transition-all duration-[0.4s] ease-in-out hidden md:block"
+          >
+            <div class="first-block-sec-four">
+              <div class="img">
+                <img src="Eternnal.jpg" alt="eternals" />
+              </div>
+              <div class="content-sec-four">
+                <p class="text-[14px] font-black font-Roboto p-1">
+                  Eternals (2021) #12
+                </p>
+                <span
+                  class="block text-[#767676] text-[12px] font-[600] font-Robotos px-1"
+                  >2022</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- ########### Second Block ########### -->
+          <div
+            class="card-block px-2 w-[172px] max-h-full max-w-full cursor-pointer hover:text-red-600 hover:translate-y-[-0.6rem] transition-all duration-[0.4s] ease-in-out hidden md:block"
+          >
+            <div class="first-block-sec-four">
+              <div class="img">
+                <img src="voices.jpg" alt="eternals" />
+              </div>
+              <div class="content-sec-four">
+                <p class="text-[14px] font-black font-Roboto p-1">
+                  Marvle's Voices: Identity (2022) #1
+                </p>
+                <span
+                  class="block text-[#767676] text-[12px] font-[600] font-Robotos px-1"
+                  >2022</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ########### Fifth Section ########### -->
+      <section>
+        <div
+          class="fifth-sec-main-wrapper md:flex relative w-full md:h-[80vh] h-auto cursor-pointer"
+        >
+          <div class="img-fourth order-3">
+            <img
+              src="fifith-sec-img.jpg"
+              alt="Background"
+              class="w-full md:h-full bg-cover"
+            />
+          </div>
+          <div
+            class="fourth-info pt-4 pb-11 pl-16 pr-8 bg-[#151515] text-[#fff] relative flex justify-center flex-col z-40 md:w-[75%] order-2"
+          >
+            <div class="text">
+              <span class="tracking-[4px] text-[14px] font-medium"
+                >ON SALE 8/24</span
+              >
+              >
+              <h1
+                class="text-[26px] font-medium font-Robotos tracking-[0.5px] md:tracking-normal md:text-[40px]"
+              >
+                NEW COMICS THIS WEEK
+              </h1>
+              <p class="font-medium font-Robotos my-2">
+                Check out the Newest Marvel comics coming out this Week !
+              </p>
+              <button
+                class="bg-[#e62429] p-2 px-3 block mt-4 hover:bg-[#6a1316] cursor-pointer font-[800] text-[14px] transition-colors duration-[0.8s] rounded-md"
+              >
+                SHOP DIGITAL COMICS
+              </button>
+              <button
+                class="bg-[#e62429] p-2 px-3 block mt-4 hover:bg-[#6a1316] cursor-pointer font-[800] text-[14px] transition-colors duration-[0.8s] rounded-md"
+              >
+                PRINT SUBSCRIPTION
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ########### BLOCKS ########### -->
+        <div
+          class="cards-blocks-main m-6 grid md:flex justify-center grid-cols-3 md:-translate-y-10 md:relative md:z-50 md:bg-white md:px-2 md:pt-6 w-[80vw] mx-auto md:m-auto"
+        >
+          <!-- ########### First Block ########### -->
+          <div
+            class="card-block px-2 w-[172px] max-h-full max-w-full cursor-pointer hover:text-red-600 hover:translate-y-[-0.6rem] transition-all duration-[0.4s] ease-in-out"
+          >
+            <div class="first-block-sec-four">
+              <div class="img">
+                <img src="damage.jpg" alt="Damage Control" />
+              </div>
+              <div class="content-sec-four">
+                <p class="text-[14px] font-black font-Roboto p-1">
+                  Damage Control(2022) #1
+                </p>
+                <span
+                  class="block text-[#767676] text-[12px] font-[600] font-Robotos px-1"
+                  >2022</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- ########### Second Block ########### -->
+          <div
+            class="card-block px-2 w-[172px] max-h-full max-w-full cursor-pointer hover:text-red-600 hover:translate-y-[-0.6rem] transition-all duration-[0.4s] ease-in-out"
+          >
+            <div class="first-block-sec-four">
+              <div class="img">
+                <img src="shang-chai.jpg" alt="Shang-chai" />
+              </div>
+              <div class="content-sec-four">
+                <p class="text-[14px] font-black font-Roboto p-1">
+                  Shang-Chi and the Ten Rings (2022) #2
+                </p>
+                <span
+                  class="block text-[#767676] text-[12px] font-[600] font-Robotos px-1"
+                  >2022</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- ########### Third Block ########### -->
+          <div
+            class="card-block px-2 w-[172px] max-h-full max-w-full cursor-pointer hover:text-red-600 hover:translate-y-[-0.6rem] transition-all duration-[0.4s] ease-in-out"
+          >
+            <div class="first-block-sec-four">
+              <div class="img">
+                <img src="judgement.jpg" alt="Judgement Day" />
+              </div>
+              <div class="content-sec-four">
+                <p class="text-[14px] font-black font-Roboto p-1">
+                  A.X.E : Judgement (2022) #3
+                </p>
+                <span
+                  class="block text-[#767676] text-[12px] font-[600] font-Robotos px-1"
+                  >2022</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- ########### Fourth Block ########### -->
+          <div
+            class="card-block px-2 w-[172px] max-h-full max-w-full cursor-pointer hover:text-red-600 hover:translate-y-[-0.6rem] transition-all duration-[0.4s] ease-in-out hidden md:block"
+          >
+            <div class="first-block-sec-four">
+              <div class="img">
+                <img src="cpatain-america.jpg" alt="Captain America" />
+              </div>
+              <div class="content-sec-four">
+                <p class="text-[14px] font-black font-Roboto p-1">
+                  Captain America: Symbol Of Truth (2022) #4
+                </p>
+                <span
+                  class="block text-[#767676] text-[12px] font-[600] font-Robotos px-1"
+                  >2022</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- ########### First Block ########### -->
+          <div
+            class="card-block px-2 w-[172px] max-h-full max-w-full cursor-pointer hover:text-red-600 hover:translate-y-[-0.6rem] transition-all duration-[0.4s] ease-in-out hidden md:block"
+          >
+            <div class="first-block-sec-four">
+              <div class="img">
+                <img src="maradures.jpg" alt="Maradures" />
+              </div>
+              <div class="content-sec-four">
+                <p class="text-[14px] font-black font-Roboto p-1">
+                  Maradures (2022) #5
+                </p>
+                <span
+                  class="block text-[#767676] text-[12px] font-[600] font-Robotos px-1"
+                  >2022</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- ########### Second Block ########### -->
+          <div
+            class="card-block px-2 w-[172px] max-h-full max-w-full cursor-pointer hover:text-red-600 hover:translate-y-[-0.6rem] transition-all duration-[0.4s] ease-in-out hidden md:block"
+          >
+            <div class="first-block-sec-four">
+              <div class="img">
+                <img src="defender.jpg" alt="Defender" />
+              </div>
+              <div class="content-sec-four">
+                <p class="text-[14px] font-black font-Roboto p-1">
+                  Defenders: Beyond (2022) #2
+                </p>
+                <span
+                  class="block text-[#767676] text-[12px] font-[600] font-Robotos px-1"
+                  >2022</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ########### Sixth Section ########### -->
+      <section>
+        <div
+          class="sixth-sec-main-wrapper md:flex text-center m-auto h-full bg-black justify-evenly cursor-pointer"
+        >
+          <div class="first-block-six-sec-left my-auto">
+            <div class="img">
+              <img
+                src="insider.jpg"
+                alt="backGround"
+                class="w-full bg-cover h-[40vh] md:h-auto"
+              />
+            </div>
+          </div>
+          <div
+            class="sixth-sec-info-right bg-black text-white py-10 md:py-20 px-5 flex flex-col space-y-2 justify-center"
+          >
+            <h1 class="text-red-600 text-[16px] tracking-[4px] font-[400]">
+              MARVEL INSIDER
+            </h1>
+            <span class="text-[26px] font-black">Watch, Earn, Reedem !</span>
+            <p class="text-[16px] font-[400]">
+              Get rewarded for doing what you already do as a fan.
+            </p>
+            <a href="/">
+              <button
+                class="bg-red-600 px-3 py-2 text-[12px] font-black rounded-md my-2"
+              >
+                JOIN NOW
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ############ Footer ############ -->
+    <footer class="bg-[#151515] text-white">
+      <div
+        class="footer-main-wrapper md:grid md:grid-cols-3 lg:grid-cols-4 md:pt-16 md:pb-5"
+      >
+        <!-- ########### first sec ########### -->
+        <div class="footer-top-content md:flex items-center justify-center">
+          <div class="img-logo w-9 mx-auto pt-14 pb-7 md:mx-0 md:pt-0 md:w-24">
+            <svg viewBox="0 0 36 52" xmlns="http://www.w3.org/2000/svg">
+              <rect fill="#EC1D24" width="100%" height="100%"></rect>
+              <path
+                fill="#FEFEFE"
+                d="M31.5 48V4H21.291l-3.64 22.735L14.102 4H4v44h8V26.792L15.577 48h4.229l3.568-21.208V48z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <!-- ########### second sec ########### -->
+        <div class="second-sec flex justify-evenly mx-4">
+          <ul class="uppercase text-[12px] tracking-[1px] font-black">
+            <li class="mb-5 hover:text-gray-300">
+              <a href="/">about marvel</a>
+            </li>
+            <li class="mb-5 hover:text-gray-300">
+              <a href="/">help/faqs</a>
+            </li>
+            <li class="mb-5 hover:text-gray-300"><a href="/">career </a></li>
+            <li class="mb-5 hover:text-gray-300">
+              <a href="/">internship</a>
+            </li>
+          </ul>
+          <ul class="uppercase text-[12px] tracking-[1px] font-extrabold ml-3">
+            <li class="mb-5"><a href="/">advertising</a></li>
+            <li class="mb-5"><a href="/">disney+</a></li>
+            <li class="mb-5"><a href="/">marvelhq.com</a></li>
+            <li class="mb-5"><a href="/">reedem digital comics</a></li>
+          </ul>
+        </div>
+        <hr class="w-[88%] m-auto bg-gray-500 md:hidden" />
+        <!-- ########### third sec ########### -->
+        <div class="third-sec">
+          <div class="img-firs flex py-4 mx-4 justify-center md:py-0">
+            <div
+              class="img w-20 flex justify-center items-center cursor-pointer"
+            >
+              <img src="insider-marvel.png " alt="logo" class="w-14" />
+            </div>
+            <div class="text cursor-pointer">
+              <h1 class="uppercase text-[13px] tracking-[1px] font-black">
+                marvel insider
+              </h1>
+              <span class="text-[12px] text-gray-400 font-[500]"
+                >Get Rewarded for Being a Marvel fan.</span
+              >
+            </div>
+          </div>
+          <div class="second-img flex py-3 mx-4 justify-center">
+            <div
+              class="img w-20 flex justify-center items-center cursor-pointer"
+            >
+              <img src="marvale-logo-fourth-sec.png" alt="" class="w-5" />
+            </div>
+            <div class="text cursor-pointer">
+              <h1 class="uppercase text-[13px] tracking-[1px] font-black">
+                marvel insider
+              </h1>
+              <span class="text-[12px] text-gray-400 font-[500]"
+                >Get Rewarded for Being a Marvel fan.</span
+              >
+            </div>
+          </div>
+          <hr class="w-[88%] m-auto bg-gray-500 md:hidden" />
+        </div>
+        <!-- ########### fourth sec ########### -->
+        <div
+          class="fourth-sec-icons-links my-4 md:my-0 md:w-[100vw] lg:w-auto md:mx-auto"
+        >
+          <span
+            class="uppercase text-[14px] font-black text-white text-center block md:mt-5"
+            >follow marvel</span
+          >
+          <div class="social-links-items mt-5 mb-8">
+            <ul class="flex justify-center space-x-6 items-center">
+              <li>
+                <a href="/"
+                  ><span
+                    ><i
+                      class="fa-brands fa-square-facebook text-[23px] hover:text-white text-[#767676] transition-colors duration-[0.5s]"
+                    ></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="/"
+                  ><span
+                    ><i
+                      class="fa-brands fa-twitter text-[23px] hover:text-white text-[#767676] transition-colors duration-[0.5s]"
+                    ></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="/"
+                  ><span
+                    ><i
+                      class="fa-brands fa-instagram text-[23px] hover:text-white text-[#767676] transition-colors duration-[0.5s]"
+                    ></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="/"
+                  ><span
+                    ><i
+                      class="fa-brands fa-youtube text-[23px] hover:text-white text-[#767676] transition-colors duration-[0.5s]"
+                    ></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="/"
+                  ><span
+                    ><i
+                      class="fa-brands fa-snapchat text-[23px] hover:text-white text-[#767676] transition-colors duration-[0.5s]"
+                    ></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="/"
+                  ><span
+                    ><i
+                      class="fa-brands fa-pinterest text-[23px] hover:text-white text-[#767676] transition-colors duration-[0.5s]"
+                    ></i></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="w-[88%] m-auto bg-gray-500 md:hidden" />
+      </div>
+      <div class="footer-down-content mt-5 mx-6 md:mt-0">
+        <ul
+          class="text-[12px] font-normal capitalize text-[#767676] grid grid-cols-2 md:grid-cols-4 gap-1 justify-center md:mx-10"
+        >
+          <li>
+            <a
+              href="/"
+              class="hover:text-white transition-colors duration-[0.3s]"
+              >terms of use</a
+            >
+          </li>
+          <li>
+            <a
+              href="/"
+              class="hover:text-white transition-colors duration-[0.3s]"
+              >privacy policy</a
+            >
+          </li>
+          <li>
+            <a
+              href="/"
+              class="hover:text-white transition-colors duration-[0.3s]"
+              >your california privacy rights</a
+            >
+          </li>
+          <li>
+            <a
+              href="/"
+              class="hover:text-white transition-colors duration-[0.3s]"
+              >do not sell my personal information</a
+            >
+          </li>
+          <li>
+            <a
+              href="/"
+              class="hover:text-white transition-colors duration-[0.3s]"
+              >children's online privacy policy</a
+            >
+          </li>
+          <li>
+            <a
+              href="/"
+              class="hover:text-white transition-colors duration-[0.3s]"
+              >licsence agreement</a
+            >
+          </li>
+          <li>
+            <a
+              href="/"
+              class="hover:text-white transition-colors duration-[0.3s]"
+              >internet-based ads</a
+            >
+          </li>
+          <li>
+            <a
+              href="/"
+              class="hover:text-white transition-colors duration-[0.3s]"
+              >marvel insider</a
+            >
+          </li>
+        </ul>
+        <span
+          class="uppercase text-[12px] font-normal text-[#767676] block text-center mt-4"
+          >&#169;2022 marvel</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
